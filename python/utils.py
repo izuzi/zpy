@@ -38,14 +38,14 @@ def do_retry(retry_times=1, delay_seconds=0):
 
 
 def time_limit(timeout=0):
-	"""
+    """
     Decorator for function timeout.
 
     @param timeout: the function will be quit after some seconds
     @return: the return value of the called function
     @raise Exception: raises an exception when timeout or some error occurred
-	"""
-	
+    """
+
     def deco(f):
         @functools.wraps(f)
         def wrapper(*args, **kwargs):
