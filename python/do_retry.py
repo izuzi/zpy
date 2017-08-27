@@ -1,5 +1,6 @@
 import utils
 
+
 def foo():
     _retry_times =3
     _delay_seconds = 1
@@ -24,5 +25,7 @@ def foo():
     except Exception as e:
         print "err=%s" % e
 
+		
 if __name__ == "__main__":
     foo()
+	

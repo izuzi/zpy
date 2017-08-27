@@ -18,7 +18,7 @@ def foo():
     try:
         bar()
     except Exception as e:
-        print "err=%s" % e
+        print "err: %s" % e
 
 
 if __name__ == "__main__":
